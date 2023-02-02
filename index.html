@@ -1,0 +1,239 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://unicons.iconscout.com/release/v4.0.0/css/line.css">
+
+    <link rel="stylesheet" href="style.css">
+    <title>Document</title>
+</head>
+<body>
+    <!-- Navigation Bar -->
+    <nav id="nav">
+        <p class="header" style="cursor: pointer;"><a onclick="scrollFunction('home','ihome')">Nathan</a></p>
+        <ul>
+            <li><p class="header"><a onclick="scrollFunction('home','ihome')" style="cursor: pointer;">Home</a></p></li>
+            <li><p class="header"><a onclick="scrollFunction('about','iabout')" style="cursor: pointer;">About</a></p></li>
+            <li><p class="header"><a onclick="scrollFunction('skills')" style="cursor: pointer;">Skills</a></p></li>
+            <li><p class="header"><a onclick="scrollFunction('services')" style="cursor: pointer;">Services</a></p></li>
+            <!-- <li><p>Portfolio</p></li> -->
+            <li><p class="header"><a onclick="scrollFunction('contact')" style="cursor: pointer;">Contactme</a></p></li>
+            <li onclick="darkMode(false)" id="light"><i class="uil uil-sun"></i></li>
+            <li onclick="darkMode(true)" id="dark"><i class="uil uil-moon"></i></li>
+        </ul>
+    </nav>
+
+    <!-- CONTAINER CONTAINER CONTAINER -->
+    <div class="container">
+        <div class="left">
+            <a class="a" id="z" href="https://www.linkedin.com/in/nathan-nathan-076316256/"><i class="uil uil-linkedin-alt"></i></a>
+            <a class="a" href="https://www.instagram.com/nathantjendra/"><i class="uil uil-instagram"></i></a>
+            <a class="a" href="https://github.com/NathanCun/portfolio"><i class="uil uil-github-alt"></i></a>
+        </div>
+        <div class="container2">
+        <!-- HOME PAGE -->
+        <div class="home" id="home">
+
+            <!-- left -->
+            <div style="display: flex; justify-content: center; width: 100%;">
+                <!-- center -->
+                <div class="center">
+                    <h1>Hi, I'am Nathan</h1>
+                    <h2 style="color: rgb(70, 70, 70);margin-top: 4px;"><a class="h2-dark">Frontend developer</a></h2>
+                    <h4 class="h4-dark" style="color: rgb(90, 90, 90); margin-top: 20px;"><a class="h4-dark">Hight level experience in web design and development knowledge, producing quality work.</a></h4>
+                    <button class="button-1 scroll" style="margin-top: 36px;" onclick="scrollFunction('contact')"><h4><b>Contact Me</b></h4>&nbsp;&nbsp;<i class="uil uil-message"></i></button>
+                    <button class="button-2 scroll" style="position: absolute; bottom: 0;" onclick="scrollFunction('about')"><i style="font-size: 1.75rem; color: #ffcc00;" class="uil uil-mouse-alt"></i><p>Scroll down</p><i class="uil uil-arrow-down"></i></button>
+                </div>
+
+                <!-- right -->
+                <div class="right"><img src="./src/home-1.png" alt="home"></div>
+            </div>
+        </div>
+
+        <!-- ABOUT ME -->
+        <div class="about" id="about">
+            <div style="display: flex; flex-direction: column; align-items: center;">
+                <h1 style="font-size: 2.25rem;">About Me</h1>
+                <h4 style="color: rgb(70, 70, 70);"><a class="h2-dark">My introduction</a></h4>
+            </div>
+            <div class="wrap">
+                <img src="./src/about-1.png" alt="my image">
+                <div>
+                    <h4 style="color: rgb(90, 90, 90);"><a class="h4-dark">Web developer, with extensive knowledge and years of experience, working in web technologies and Ui / Ux design, delivering quality work.</a></h4>
+                    <a href="./src/Nathan_CV.pdf"><button class="button-1 scroll" style="margin-top: 80px;"><h4><b>Download CV</b></h4>&nbsp;&nbsp;<i class="uil uil-download-alt"></i></button></a>
+                </div>
+            </div>
+        </div>
+
+        <!-- SKILLS -->
+        <div class="skills" id="skills">
+            <div style="display: flex; flex-direction: column; align-items: center;">
+                <h1 style="font-size: 2.25rem;">Skills</h1>
+                <h4 style="color: rgb(70, 70, 70);"><a class="h2-dark">My technical skills</a></h4>
+            </div>
+            <!-- dropdown -->
+            <div style="display: flex; width: 100%; justify-content: space-between;">
+                <div style="display: flex; flex-direction: column; width: 48%; margin-top: 60px;">
+                    <!-- dropdown 1 -->
+                    <div class="dropdown">
+                        <label for="touch"><span style="display: flex; align-items: center;"><div style="display: flex; align-items: center;"><i class=" uil uil-server-network-alt"></i>&nbsp;&nbsp;<h4><a class="h2-dark">Backend developer</h3></a></div><i class="arrow-dark uil uil-angle-up i-first" id="icon1"></i></span></label>           
+                        <input type="checkbox" name="touch[]" id="touch" class="checkbox" onclick="cb('touch', 'icon1')">
+                        
+                        <ul class="slide">
+                          <li>PHP</li> 
+                        </ul>
+                    </div>
+                    <!-- dropdown 2 -->
+                    <div class="dropdown">
+                        <label for="touch2"><span style="display: flex; align-items: center;"><div style="display: flex; align-items: center;"><i class=" uil uil-brackets-curly"></i>&nbsp;&nbsp;<h4><a class="h2-dark">Frontend developer</h4></a></div><i class="arrow-dark uil uil-angle-up i-first" id="icon2"></i></span></label>               
+                        <input type="checkbox" name="touch[]" id="touch2" class="checkbox" onclick="cb('touch2', 'icon2')"> 
+                      
+                        <ul class="slide">
+                            <li>HTML</li> 
+                          <li>CSS</li>
+                          <li>JS</li>
+                        </ul>
+                    </div>
+                </div>
+                <!-- dropdown 3 -->
+                <div class="dropdown2">
+                    <div class="dropdown">
+                        <label for="touch3"><span style="display: flex; align-items: center;"><div style="display: flex; align-items: center;"><i class=" uil uil-ruler-combined"></i>&nbsp;&nbsp;<h4><a class="h2-dark">Designer</h4></a></div><i class="arrow-dark uil uil-angle-up i-first" id="icon3"></i></span></label>               
+                        <input type="checkbox" name="touch[]" id="touch3" class="checkbox" onclick="cb('touch3', 'icon3')"> 
+                      
+                        <ul class="slide">
+                            <li>Figma</li>
+                            <li>Photoshop</li> 
+                            <li>Illustrator</li>
+                        </ul>
+                    </div>
+                </div>
+
+                
+            </div>
+        </div>
+
+
+        <!-- Services -->
+        <div class="services" id="services">
+            <div style="display: flex; flex-direction: column; align-items: center;">
+                <h1 style="font-size: 2.25rem;">Services</h1>
+                <h4 style="color: rgb(70, 70, 70);"><a class="h2-dark">What i offer</a></h4>
+            </div>
+            <div class="wrap">
+                <div class="card">
+                    <i class="uil uil-window-grid"></i>
+                    <h2>Ui/Ux<br>Designer</h2>
+                    <div class="view" onclick="modalfunction('modal1')">
+                        <p>View More</p>
+                        <i class="uil uil-arrow-right"></i>
+                    </div>
+                </div>
+                <div class="card">
+                    <i class="uil uil-arrow"></i>
+                    <h2>Frontend<br>Developer</h2>
+                    <div class="view" onclick="modalfunction('modal2')">
+                        <p>View More</p>
+                        <i class="uil uil-arrow-right"></i>
+                    </div>
+                </div>
+                <div class="card">
+                    <i class="uil uil-pen"></i>
+                    <h2>Branding<br>Designer</h2>
+                    <div class="view" onclick="modalfunction('modal3')">
+                        <p>View More</p>
+                        <i class="uil uil-arrow-right"></i>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+
+        <!-- Contact Me -->
+        <div class="contact" id="contact">
+            <div style="display: flex; flex-direction: column; align-items: center;">
+                <h1 style="font-size: 2.25rem;">Contact Me</h1>
+                <h4 style="color: rgb(70, 70, 70);"><a class="h2-dark">Get in touch</a></h4>
+            </div>
+            <div class="wraps">
+                    <a href="https://api.whatsapp.com/send?phone=6282165624559" class="wrap">
+                        <i class="uil uil-phone"></i>
+                        <div style="display: flex; flex-direction: column; align-items: flex-start; margin-left: -1%; cursor: pointer;">
+                            <h2>Whatsapp</h2>
+                            <p><a class="h5-dark">0821-6562-4559</a></p>
+                        </div>
+                    </a>
+                    <a href="mailto:nathantjendra67@gmail.com" class="wrap">
+                    <i class="uil uil-envelope-alt"></i>
+                    <div style="display: flex; flex-direction: column; align-items: flex-start; margin-left: -1%; cursor: pointer;">
+                        <h2>Email</h2>
+                        <p><a class="h5-dark">nathantjendra67@gmail.com</a></p>
+                    </div>
+                </a>
+                    <a href="https://www.google.co.id/maps/dir//Komplek+Serdang+Residence,+Jl.+M.+Yakub+No.81,+Sei+Kera+Hilir+II,+Medan+Perjuangan,+Medan+City,+North+Sumatra+20222/@3.5998112,98.6792113,15z/data=!4m8!4m7!1m0!1m5!1m1!1s0x303131e2a8d1a735:0x15d31fcf93889064!2m2!1d98.6967202!2d3.5997685" class="wrap">
+                    <i class="uil uil-map-marker"></i>
+                    <div style="display: flex; flex-direction: column; align-items: flex-start; margin-left: -1%; cursor: pointer;">
+                        <h2>Location</h2>
+                        <p><a class="h5-dark">Komp Serdang Residence No B 8</a></p>
+                    </div>
+                </a>
+                </div>
+            </div>
+        </div>
+        </div>
+    </div>
+        
+
+    <!-- Modal -->
+    <div class="modal" id="modal1">
+        <div class="card">
+            <div class="title">
+                <h2>Ui/Ux Designer</h2>
+                <i onclick="closeFunction('modal1')" style="color: #ffcc00; font-size: 1.5rem;" class="uil uil-times"></i>
+            </div>
+            <div style="display: flex; margin-top: 20px;"><i style="color: #ffcc00;" class="uil uil-check-circle"></i>&nbsp;<h4 style="color: rgb(110,110,110)">I develop the user interface.</h4></div>
+            <div style="display: flex; margin-top: 20px;"><i style="color: #ffcc00;" class="uil uil-check-circle"></i>&nbsp;<h4 style="color: rgb(110,110,110)">Optimize the user experience.</h4></div>
+            <div style="display: flex; margin-top: 20px;"><i style="color: #ffcc00;" class="uil uil-check-circle"></i>&nbsp;<h4 style="color: rgb(110,110,110)">I create ux element interactions.</h4></div>
+            <div style="display: flex; margin-top: 20px;"><i style="color: #ffcc00;" class="uil uil-check-circle"></i>&nbsp;<h4 style="color: rgb(110,110,110)">I position your company brand.</h4></div>
+        </div>
+        <div class="background" onclick="closeFunction('modal1')"></div>
+    </div>
+    <div class="modal" id="modal2">
+        <div class="card">
+            <div class="title">
+                <h2>Ui/Ux Designer</h2>
+                <i onclick="closeFunction('modal2')" style="color: #ffcc00; font-size: 1.5rem;" class="uil uil-times"></i>
+            </div>
+            <div style="display: flex; margin-top: 20px;"><i style="color: #ffcc00;" class="uil uil-check-circle"></i>&nbsp;<h4 style="color: rgb(110,110,110)">I bring concepts to life.</h4></div>
+            <div style="display: flex; margin-top: 20px;"><i style="color: #ffcc00;" class="uil uil-check-circle"></i>&nbsp;<h4 style="color: rgb(110,110,110)">Web page development.</h4></div>
+            <div style="display: flex; margin-top: 20px;"><i style="color: #ffcc00;" class="uil uil-check-circle"></i>&nbsp;<h4 style="color: rgb(110,110,110)">I the improve site interaction.</h4></div>
+            <div style="display: flex; margin-top: 20px;"><i style="color: #ffcc00;" class="uil uil-check-circle"></i>&nbsp;<h4 style="color: rgb(110,110,110)">I fix bugs and test for usability.</h4></div>
+        </div>
+        <div class="background" onclick="closeFunction('modal2')"></div>
+    </div>
+    <div class="modal" id="modal3">
+        <div class="card">
+            <div class="title">
+                <h2>Branding Designer</h2>
+                <i onclick="closeFunction('modal3')" style="color: #ffcc00; font-size: 1.5rem;" class="uil uil-times"></i>
+            </div>
+            <div style="display: flex; margin-top: 20px;"><i style="color: #ffcc00;" class="uil uil-check-circle"></i>&nbsp;<h4 style="color: rgb(110,110,110)">I design the logo.</h4></div>
+            <div style="display: flex; margin-top: 20px;"><i style="color: #ffcc00;" class="uil uil-check-circle"></i>&nbsp;<h4 style="color: rgb(110,110,110)">I combine art and science.</h4></div>
+            <div style="display: flex; margin-top: 20px;"><i style="color: #ffcc00;" class="uil uil-check-circle"></i>&nbsp;<h4 style="color: rgb(110,110,110)">I create identities of company products.</h4></div>
+            <div style="display: flex; margin-top: 20px;"><i style="color: #ffcc00;" class="uil uil-check-circle"></i>&nbsp;<h4 style="color: rgb(110,110,110)">I scratch and scratch.</h4></div>
+        </div>
+        <div class="background" onclick="closeFunction('modal3')"></div>
+    </div>
+
+    <div class="mobile">
+        <p>Sorry, this website can only be accessed via desktop.</p>
+    </div>
+</body>
+</html>
+<script src="https://code.jquery.com/jquery-3.5.1.js" integrity="sha256-QWo7LDvxbWT2tbbQ97B53yJnYU3WhH/C8ycbRAkjPDc=" crossorigin="anonymous"></script>
+<script src="script.js"></script>

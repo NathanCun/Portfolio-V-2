@@ -1,0 +1,408 @@
+*, body{
+    margin: 0;
+    padding: 0;
+}
+
+body{
+    color: black;
+    transition: all 0.4s;
+}
+
+html{
+    font-family: 'poppins', sans-serif;
+}
+
+html, body {
+    width: 100%;
+}
+
+
+/* text css */
+
+/* font size */
+h1{font-size: 3rem; font-weight: 600;}
+h2{font-size: 1.5rem; font-weight: 500;}
+h3{font-size: 1.25rem; font-weight: 500;}
+h4{font-size: 1.125rem; font-weight: 420;}
+p{font-size: .938rem; font-weight: 500;}
+.fs-s{font-size: .813rem; font-weight: 400;}
+.fs-sr{font-size: .75rem;}
+
+li{list-style: none;}
+
+i{font-size: 1.25rem;}
+
+a{text-decoration: none; color: black; transition: all 0.4s;}
+
+li{ cursor: pointer;}
+
+/* button */
+button{
+    cursor: pointer;
+}
+
+.button-1{
+    padding: 20px 14px;
+    border: none;
+    border-radius: 8px;
+    display: flex;
+    align-items: center;
+    background-color:  #ffcc00;
+    color: white;
+}
+
+.button-1 h3{
+    font-weight: 500;
+}
+
+.button-2{
+    background-color: white;
+    border: none;
+    display: flex;
+    align-items: center;
+}
+/* Navigation */
+nav{
+    position: fixed;
+    width: 80%;
+    display: flex;
+    padding: 20px 10%;
+    justify-content: space-between;
+    background-color: white;
+    z-index: 100;
+    transition: all 0.4s;
+}
+
+nav ul {
+    display: flex;
+    width: 60%;
+    justify-content: space-between;
+}
+
+nav a:hover {
+    color: #ffcc00;
+}
+
+
+
+/* container */
+.container{
+    padding: 64px 10%;
+    display: flex;
+}
+
+.container2{
+    padding: 0 10%;
+}
+
+/* HOME */
+
+.home{
+    width: 100%;
+    height: 86vh;
+    display: flex;
+    justify-content: space-between;
+    position: relative;
+}
+.left{
+    width: 5%;
+    display: flex;
+    flex-direction: column;
+    padding-top: 32vh;
+    height: 400vh;
+}
+
+
+
+.home .center {
+    max-width: 390px;
+    margin-top: 120px;
+    margin-right: 48px;
+}
+
+.home .right img{
+    width: 340px;
+    margin-top: 120px;
+}
+
+.left .a{
+    color: #ffcc00;
+    margin: 8px 0;
+}
+/* about us */
+.about{
+    height: 70vh;
+    margin-top: 180px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.about .wrap{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.about .wrap img {
+    width: 45%;
+    border-radius: 8px;
+}
+
+.about .wrap div {
+    width: 45%;
+    
+}
+
+/* skills */
+.skills {
+    height: 76vh;
+    margin-top: 180px;
+}
+
+/* dropdown */
+
+span {
+    color :  black;
+    cursor : pointer;
+    display: flex;
+    justify-content: space-between;
+  }
+  
+.slide {
+    width:100%;
+    height:0px;
+    overflow: hidden;
+    text-align: left;
+    transition: height .4s ease;
+}
+
+.i-first {
+    transition: all 0.4s ease;
+}
+  .slide li:nth-child(1){
+    padding : 20px 30px 8px;
+  }
+  .slide li {
+    padding : 8px 30px;
+}
+  
+#touch, #touch2, #touch3 {
+    position: absolute; opacity: 0; height: 0;
+}    
+  
+  #touch:checked + .slide {height: 60px;} 
+  #touch2:checked + .slide {height: 144px;}
+  #touch3:checked + .slide {height: 144px;}
+
+.dropdown{
+    width: 100%;
+    min-width: 300px;
+    border-bottom: 2px solid black;
+}
+
+.dropdown2{
+    width: 48%;
+    min-width: 300px;
+    margin-top: 60px;
+}
+
+.dropdown i:nth-child(1){
+    color: #ffcc00;
+    font-size: 2em;
+}
+
+.show {display: block;}
+
+/* Services */
+.services{
+    margin-top: 180px;
+    height: 72vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+}
+.wrap{
+    display: flex;
+    justify-content: space-between;
+}
+
+.services .card{
+    width: 21%;
+    padding: 120px 40px 40px;
+    box-shadow: rgba(0, 0, 0, 0.16) 0px 10px 36px 0px, rgba(0, 0, 0, 0.06) 0px 0px 0px 1px;
+    border-radius: 4px;
+    transition: all 0.4s;
+}
+
+.services .card p {
+    color: #ffcc00;
+    cursor: pointer;
+}
+
+.services .card i{
+    font-size: 2em;
+    color: #ffcc00;
+    transition: all 0.4s;
+}
+
+.services .card .view{
+    display: flex;
+    margin-top: 20px;
+    align-items: center;
+    
+}
+
+.services .card .view:hover i{
+    transform: translateX(12px);
+}
+
+.services .card:hover{
+    box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
+}
+
+/* contact me */
+.contact{
+    margin-top: 180px;
+}
+
+.contact .wraps{
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-start;
+    margin-top: 80px;
+}
+
+.contact .wrap{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.contact .wrap i{
+    font-size: 3rem;
+    color: #ffcc00;
+}
+
+.contact .wrap p{
+    color: rgb(100, 100, 100);
+    font-weight: 500;
+}
+
+.contact .wrap h2{
+    color: black;
+}
+.scroll{
+    transition: all 0.4s;
+}
+.scroll:hover{
+    transform: translateY(6px);
+}
+
+/* lightmode darkmode */
+#dark-mode,
+#dark-mode .card,
+#dark-mode nav,
+#dark-mode .button-2 {
+    background-color: #090700;
+    color: white;
+  }
+
+#dark-mode .button-1{
+    color: black;
+}
+
+#dark-mode nav a:hover,
+#dark-mode .left .a:hover,
+#dark-mode{
+    color: #ffcc00;
+}
+
+#dark-mode .services .wrap .card{
+    background-color: #191917;
+}
+
+#dark-mode .h2-dark,
+#dark-mode .card h4{
+    color: rgb(247, 247, 247)
+}
+
+#dark-mode .h4-dark{
+    color: rgb(217, 217, 217)
+}
+
+#dark-mode .h5-dark{
+    color: rgb(139, 139, 139)
+}
+
+#dark-mode .dropdown{
+    border-bottom: 2px solid white;
+}
+
+#dark-mode .arrow-dark,
+#dark-mode a,
+#dark-mode h2 {
+    color: white;
+}
+
+#light{
+    display: none;
+}
+
+/* Modal */
+.modal{
+    position: fixed;
+    z-index: 1000;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100vh;
+    display: none;
+}
+.background{
+    background-color: black;
+    height: 100vh;
+    width: 100%;
+    opacity: 0.4;
+}
+
+.modal .card {
+    position: fixed;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    background-color: white;
+    width: 400px;
+    border-radius: 10px;
+    z-index: 1001;
+    padding: 28px 24px;
+}
+
+.modal .card .title{
+    display: flex;
+    justify-content: space-between;
+}
+
+/* mobile page */
+
+.mobile{
+    width: 100%;
+    height: 100vh;
+}
+
+.mobile p {
+    margin: auto;
+}
+
+@media screen and (max-width: 1050px) {
+    nav{
+        display: none;
+    }
+    .container{
+        display: none;
+    }
+    .mobile{
+        display: flex;
+    }
+}
