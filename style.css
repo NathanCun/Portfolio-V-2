@@ -136,10 +136,11 @@ nav a:hover {
     display: flex;
     flex-direction: column;
     align-items: center;
-    justify-content: space-between;
+    justify-content: center;
 }
 
 .about .wrap{
+    margin-top: 80px;
     display: flex;
     justify-content: space-between;
     align-items: center;
@@ -159,6 +160,7 @@ nav a:hover {
 .skills {
     height: 76vh;
     margin-top: 180px;
+    justify-content: center;
 }
 
 /* dropdown */
@@ -198,14 +200,12 @@ span {
 
 .dropdown{
     width: 100%;
-    min-width: 300px;
     border-bottom: 2px solid black;
 }
 
 .dropdown2{
     width: 48%;
-    min-width: 300px;
-    margin-top: 60px;
+    margin-top: 80px;
 }
 
 .dropdown i:nth-child(1){
@@ -220,9 +220,10 @@ span {
     height: 72vh;
     display: flex;
     flex-direction: column;
-    justify-content: space-between;
+    justify-content: center;
 }
-.wrap{
+.services .wrap{
+    margin-top: 80px;
     display: flex;
     justify-content: space-between;
 }
@@ -268,7 +269,7 @@ span {
 
 .contact .wraps{
     display: flex;
-    justify-content: space-between;
+    justify-content: space-around;
     align-items: flex-start;
     margin-top: 80px;
 }
@@ -279,6 +280,14 @@ span {
     align-items: center;
 }
 
+.contact .contactme{
+    display: flex;
+    overflow: visible;
+    width: 300px;
+    align-items: center;
+    justify-content: center;
+}
+
 .contact .wrap i{
     font-size: 3rem;
     color: #ffcc00;
@@ -287,6 +296,7 @@ span {
 .contact .wrap p{
     color: rgb(100, 100, 100);
     font-weight: 500;
+    width: 500px;
 }
 
 .contact .wrap h2{
@@ -395,14 +405,78 @@ span {
     margin: auto;
 }
 
-@media screen and (max-width: 1050px) {
+@media screen and (max-width: 1250px) {
+    /* contact */
+
+    .contact .contactme {
+        flex-direction: column;
+    }
+    .contact p{
+        display: none;
+    }
+}
+
+@media screen and (max-width: 1000px) {
+    /* navbar */
+
     nav{
-        display: none;
+        bottom: 0;
     }
+    
+    /* container */
     .container{
-        display: none;
+        padding:20px;
     }
-    .mobile{
-        display: flex;
+
+    .container2{
+        padding-right: 0;
+    }
+
+    .left{
+        height: 400px;
+    }
+    .home{
+        height: 600px;
+    }
+
+    /* about me */
+    .about{
+        height: auto;
+        margin-top: 120px;
+        padding-right: 12%;
+        justify-content: start;
+    }
+
+    /* skills */
+    .skills{
+        height: auto;
+        margin-top: 120px;
+        padding-right: 12%;
+        justify-content: start;
+    }
+
+    /* services */
+    .services{
+        height: auto;
+        margin-top: 120px;
+        padding-right: 12%;
+        justify-content: start;
+    }
+
+    .services .wrap{
+        flex-direction: column;
+        align-items: center;
+        margin-top: 40px;
+    }
+
+    .services .card{
+        width: 50%;
+        padding: 40px;
+        margin-top: 40px;
+    }
+
+    .contact{
+        padding-bottom: 80px;
+        padding-right: 12%;
     }
 }
